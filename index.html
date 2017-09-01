@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Авторизация. Тестирование</title>
+	<link rel="stylesheet" href="normalize.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div>
+	<div class="user">
+	<h4 style="text-align: center;">Тестирование формы авторизации</h4>
+	<form id="myForm"  class="form" action="request/success.json">
+		<style type="text/css" scoped>
+			input {
+			  border: 1px solid gray;
+			}
+			input.error {
+			  border: 1px solid red;
+			}
+		</style>
+		<div class="form__group">
+			<input type="text" id="fio" name="fio" placeholder="ФИО" class="form__input">
+		</div>
+		<div class="form__group">
+			<input type="email" id="email" name="email" placeholder="Email" class="form__input">
+		</div>
+		<div class="form__group">
+			<input type="tel" id="phone" name="phone" placeholder="Телефон" class="form__input">
+		</div>
+		<button class="btn" id="submitButton">Отправить форму</button>
+	</form>
+	<div id="resultContainer"></div>
+	</div>
+</div>
+<script src="init.js"></script>
+</body>
+</html>
